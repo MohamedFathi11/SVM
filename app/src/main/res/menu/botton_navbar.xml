@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Scoreboard"
+        android:icon="@drawable/ic_baseline_scoreboard_24"
+        android:id="@+id/score"/>
+    <item android:title="Game"
+        android:icon="@drawable/ic_baseline_storm_24"
+        android:id="@+id/game"/>
+    <item android:title="Punishment"
+        android:icon="@drawable/ic_baseline_theater_comedy_24"
+        android:id="@+id/pun"/>
+</menu>
