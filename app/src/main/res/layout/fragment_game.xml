@@ -19,10 +19,12 @@
             android:id="@+id/game_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:ems="10"
-            android:text=""
             android:hint="Game Name"
-            android:layout_margin="20dp" />
+            android:minHeight="48dp"
+            android:text=""
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,6 +43,7 @@
                 android:layout_gravity="center"
                 android:textSize="30dp"
                 android:textStyle="bold"
+                android:textColor="@color/teal_700"
                 />
 
             <TextView
@@ -52,7 +55,9 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="30dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/pink_200"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -61,19 +66,90 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/mo_counter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mo_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="0"
+                    android:textSize="70dp"
+                    app:cornerRadius="100dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/mobtn_background_color"
+                    android:textColor="@color/mobtn_text_color"
+                    />
+
+                <Button
+                    android:id="@+id/mo_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="--"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/defaultbtn_background"
+                    android:textColor="@color/defaultbtn_textcolor"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/samar_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="0"
+                    android:textSize="70dp"
+                    app:cornerRadius="100dp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/samar_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="--"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/defaultbtn_background"
+                    android:textColor="@color/defaultbtn_textcolor"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <Button
-                android:id="@+id/samar_counter"
-                android:layout_width="wrap_content"
+                android:id="@+id/end_game"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/defaultbtn_background"
+                android:text="End Game!"
+                android:textColor="@color/defaultbtn_textcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
